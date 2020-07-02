@@ -2,7 +2,7 @@ import got from "got";
 
 import accessEnv from "#root/helpers/accessEnv";
 
-const USERS_SERVICE_URI = accessEnv("USERS_SERVICE_URI");
+const USERS_SERVICE_URI = "http://localhost:7102";//accessEnv("USERS_SERVICE_URI");
 
 export default class UsersService {
   static async createUser({ email, password }) {

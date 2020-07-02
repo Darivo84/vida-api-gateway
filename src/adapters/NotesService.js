@@ -2,7 +2,7 @@ import got from "got";
 
 import accessEnv from "#root/helpers/accessEnv";
 
-const NOTES_SERVICE_URI = accessEnv('NOTES_SERVICE_URI');
+const NOTES_SERVICE_URI = "http://localhost:7100";//accessEnv('NOTES_SERVICE_URI');
 
 export default class NotesService {
   static async createNote({ description, title }) {
